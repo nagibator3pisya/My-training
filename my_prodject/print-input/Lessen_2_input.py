@@ -1,15 +1,11 @@
-
-# Несколько переменных в методе print
-# name = 'Алеша'
-# city = 'Тула'
-# print('Меня зовут', name, '.', city, '- мой город!')
-
-# Значение переменно можно менять
-# print(' Как тебя зовут?')
-# name = input()
-# print('Привет', name)
+# first = input()
+# second = input()
 #
-# name = 'Тимур'
-# print('Привет', name)
+# print('Я', first, 'и', second)
 
-name = input('Как зовут?')
+# Примечание 3
+name_1 = input()
+print('Привет, ', name_1, '!')
+
+name_2 = input()
+print('Привет, ', name_2, '.')
