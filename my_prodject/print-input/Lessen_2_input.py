@@ -1,11 +1,13 @@
-# first = input()
-# second = input()
+# задачи
+# a = input()
+# b = input()
+# c = input()
 #
-# print('Я', first, 'и', second)
+# print(a, b, c)
 
-# Примечание 3
-name_1 = input()
-print('Привет, ', name_1, '!')
+# a = "Don't worry"
+# b = 'Be happy'
+#
+# print('a')
+# print('b')
 
-name_2 = input()
-print('Привет, ', name_2, '.')
