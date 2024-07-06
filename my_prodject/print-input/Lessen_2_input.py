@@ -1,7 +1,15 @@
-# # input с переменной
-# variable_name = input()
-# print('Вы ввели текст:', variable_name)
 
-# Переменные в команде print
-city = 'Тула'
-print(city, 'мой город')
+# Несколько переменных в методе print
+# name = 'Алеша'
+# city = 'Тула'
+# print('Меня зовут', name, '.', city, '- мой город!')
+
+# Значение переменно можно менять
+# print(' Как тебя зовут?')
+# name = input()
+# print('Привет', name)
+#
+# name = 'Тимур'
+# print('Привет', name)
+
+name = input('Как зовут?')
