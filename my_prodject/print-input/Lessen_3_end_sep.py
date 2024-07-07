@@ -1,19 +1,12 @@
-
-# # sep c переменно
-# minus = '-'
-# print('aa', 'bb', 'cc', sep=minus)
-# параметр end
-# print("A great man doesn't seek to lead.")
-# print("He's called to it. And he answers.")
+# примечание 4 можно указывать sep and end в по разному
 #
+# arg1 = 'hello'
+# sep1 = '_-_'
+# end1 = '+++'
 #
-# print("A great man doesn't seek to lead.", end='\n')
-# print("He's called to it. And he answers.", end='\n')
+# print(arg1, 'каждый', sep=sep1, end='! ')
+# print('Сейчас', '2024', 'год?', sep=' ', end=end1)
 
-# minus = '-'
-# print('a', 'b', 'c', end=minus)
-# print('second line')
-#
-# print('a', '\n', 'b', '\n', 'c', sep='*', end='#')
-
-# print('a', 'b', 'c', sep='*', end='finich')
+# примечание 5 убрать все дополнительные выводимые символы
+print('a', 'b', 'c', end='', sep='')
+print('d', 'e', 'f', sep='', end='')
