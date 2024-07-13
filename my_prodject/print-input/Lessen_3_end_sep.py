@@ -1,12 +1,26 @@
-# примечание 4 можно указывать sep and end в по разному
-#
-# arg1 = 'hello'
-# sep1 = '_-_'
-# end1 = '+++'
-#
-# print(arg1, 'каждый', sep=sep1, end='! ')
-# print('Сейчас', '2024', 'год?', sep=' ', end=end1)
+# множественное присваивание
 
-# примечание 5 убрать все дополнительные выводимые символы
-print('a', 'b', 'c', end='', sep='')
-print('d', 'e', 'f', sep='', end='')
+# name = 'Timur'
+# surname = 'Guev'
+#
+# print('Имя' ,name,'Фамилия', surname)
+
+
+# обмен значений двух переменных
+
+name1 = 'Timur'
+name2 = 'Guev'
+
+name1, name2 = name2, name1
+
+print(name1)
+print(name2)
+
+# print('Java')
+# print('Ruby')
+# print('Scala')
+print('Python', end='+')  # print('C++')
+# print('GO')
+print('C#', end='=')  # print('C')
+print('awesome')
+# finish
