@@ -1,32 +1,49 @@
-# Каскадное ветвление
-
-# grade = int(input('Введите вашу отметку: '))
-#
-# if grade >= 90:
-#     print(5)
-# elif grade >= 80:
-#     print(4)
-# elif grade >= 70:
-#     print(3)
-# elif grade >= 60:
-#     print(2)
-
-#Гонка спидстеров
-# Зума равна   n, а скорость Флэша равна  k
-# n = int(input())
-# k = int(input())
-#
-# if n > k :
-#     print('NO')
-# elif k > n:
-#     print('YES')
-# elif k == n:
-#     print("Don't know")
-
 # Вид треугольника
+#
+# a = int(input())
+# b = int(input())
+# c = int(input())
+#
+# if a == b and b == c:
+#     print('Равносторонний треугольник')
+# elif (a == b and a != c) or (a == c and a != b) or (b == c and b != a):
+#     print('равнобедренным ')
+#
+# elif a != b != c:
+#     print('Разносторонний ')
 
-a = int(input())
-b = int(input())
-c = int(input())
+# Серединное число
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+#
+# if a < b < c or  a > b > c:
+#     print(b)
+# elif c < a < b  or c > a > b:
+#     print(a)
+# else:
+#     print(c)
+
+# Количество дней
+# month_number = int(input())
+#
+# if month_number in (1, 3, 5, 7, 8, 10, 12):
+#   print(31)
+# elif month_number == 2:
+#   print(28)
+# else:
+#   print(30)
+
+ves = int(input())
+
+if ves <= 60:
+    print('Легкий вес')
+if ves <= 64:
+    print('Полусредний вес')
+if ves <= 69:
+    print('Первый полусредний вес')
+
+
 
 
