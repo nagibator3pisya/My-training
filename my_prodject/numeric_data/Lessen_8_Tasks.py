@@ -1,35 +1,21 @@
-# a = float(input())
-# b = float(input())
+# вычисление лет собаки
+# age_dog = int(input())
+# if  age_dog <= 2:
+#     n = age_dog * 10.5
+#     print(f'Возрост собаки не меньше двух лет {n}')
+# elif age_dog >= 2:
+#     n2 = (age_dog - 2) * 4 + 21
+#     print(n2)
+
+# положительное число
 #
-# s = 1 / 2 * a * b
-#
-# print(s)
-
-
-# Две старушки
-
-# s = float(input())
-# v1 = float(input())
-# v2 = float(input())
-#
-# form = v1 + v2
-# form2 = s / form
-#
-# print(form2)
-
-# Обратное число
-
 # num = float(input())
-#
-# if num / 2 == 0:
-#     print('Обратного числа не существует')
-# else:
-#     num2 = 1 / num
-#     print(num2)
+# out = int(num * 10)
+# out2 = out % 10
+# print(out2)
 
-# градус по Фаренгейту
+#  положительное действительное число. Выведите его дробную часть.
+floats = float(input())
+integers = ( floats - int(floats) ) % 1
 
-# Tf = float(input())
-# Tc = 5 / 9 * (Tf - 32 )
-#
-# print(Tc)
+print(integers)

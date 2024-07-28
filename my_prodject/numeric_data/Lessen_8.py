@@ -1,2 +1,2 @@
-a = int(input())
-b = int(input())
+# Функции min() и max()
+
