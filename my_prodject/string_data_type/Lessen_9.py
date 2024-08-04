@@ -1,28 +1,43 @@
-# str = '  "Python is a great language!", said Fred. ' \
-#       '"I don\'t ever remember having this much fun before."'
+# str = 'Привет, python'
 #
-# print(str)
-
-
-# futboll = input()
-# print(f'футбольная команда {futboll} имеет длину {len(futboll)} символов')
-
-# city1 = input()
-# city2 = input()
-# city3 = input()
-# lengt = len(city1, city2, city3)
-# max = max(city1, city2, city3, key=lengt)
-# min = min(city1, city2, city3, key=lengt)
-# print(max,min)
-
-# найти среднее число
-#
-# a = len(input())
-# b = len(input())
-# c = len(input())
-#
-# if (2 * b - a - c) * (2 * c - a - b) * (2 * a - b - c):
+# if 'Привет' in str:
 #     print('YES')
 # else:
 #     print('NO')
+
+# # and
+# str = 'banana'
 #
+# if 'a' in str and 'b' in str:
+#     print(True)
+# else:
+#     print(False)
+#
+# # or
+# str = 'banana'
+#
+# if 'a' in str or 'o' in str:
+#     print(True)
+# else:
+#     print(False)
+#
+# # not
+# str = 'banana'
+# if not 'o' in str:
+#     print(True)
+# else:
+#     print(False)
+
+# # точная последовательность
+#
+# s = 'Hello' in 'Hello world'
+# print(s)
+#
+# s = 'dlrow' in 'Hello world'
+# print(s)
+
+# Чувствительность к регистру
+#
+# s = 'Hello'
+# print('H' in s)
+# print('h' in s)
