@@ -1,11 +1,25 @@
-# str = 'abcd'
+# print('A')
+# print('B')
 #
-# for i in str:
-#     print(i)
-
-
 # for i in range(5):
-#     num =int(input())
-#     print("Квадрат вашего числа равен:", num * num)
+#     print('C')
+#     print('D')
 #
-# print('Цикл завершен')
+# print('E')
+# str = input()
+# count = int(input())
+# for i in range(count):
+#     print(str)
+
+
+
+# цикл с 1 а не с 0
+
+# for i in range(10):
+#     print(i + 1, '--пип')
+
+
+# использование временной переменно _
+text = 'abcd'
+for _ in text:
+    print(_, 'ненужная инфа')
