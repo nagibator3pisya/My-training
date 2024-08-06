@@ -1,29 +1,21 @@
-# # принимает строку
-# str = input()
-# # принимает чилсло
-# count = int(input())
-# # внутри цикла происходит, мы называет счет сколько раз будет итерироваться строка
-# for i in range(count):
-#     print(str)
-
-# for i in range(6):
-#     print('AAA')
+# num = int(input())
 #
-# for a in range(5):
-#     print('BBBB')
-#
-# print('E')
-#
-# for c in range(9):
-#     print('TTTTT')
-#
-#
-# print('G')
+# for i in range(num+1):
+#     kv = i ** 2
+#     print(f'Квадрат числа {i} равен {kv}')
 
 
-# Звездный прямоугольник
 
-n = int(input())
+# num = int(input())
+#
+# for i in range(num):
+#     kv = (num - i) * '*'
+#     print(kv)
+
+m = float(input()) # стартовое количество организмов;
+p = float(input()) # среднесуточное увеличение в %;
+n = int(input()) #  количество дней для размножения.
 
 for i in range(n):
-    print("*" * 19)
+  print(i + 1,m)
+  m = m + m * (p / 100)
