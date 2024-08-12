@@ -1,25 +1,9 @@
-# print('A')
-# print('B')
-#
-# for i in range(5):
-#     print('C')
-#     print('D')
-#
-# print('E')
-# str = input()
-# count = int(input())
-# for i in range(count):
-#     print(str)
+# num = int(input())
+# for _ in  range(1, 10, 2):
+#     print(_)
+
+# Пример исла из промежутка [100;999] которые заканчиваются на 7
 
 
-
-# цикл с 1 а не с 0
-
-# for i in range(10):
-#     print(i + 1, '--пип')
-
-
-# использование временной переменно _
-text = 'abcd'
-for _ in text:
-    print(_, 'ненужная инфа')
+for _ in range(1, 6):
+   print('Python rocks!')
