@@ -1,5 +1,5 @@
-# метод count
+# метод reverse
 
-names = ['Timur', 'Gvido', 'Roman', 'Timur', 'Anders', 'Timur']
-cnt = names.count('Roman')
-print(cnt)
+names = ['Gvido', 'Roman', 'Timur']
+names.reverse() # ['Timur', 'Roman', 'Gvido']
+print(names)
