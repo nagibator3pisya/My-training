@@ -11,4 +11,4 @@ max_index = l.index(max_value)
 
 l[max_index],l[min_index] = min_value,max_value
 
-print(l)
+print(*l)
