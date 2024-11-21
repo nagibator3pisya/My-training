@@ -1,14 +1,15 @@
-l = input().split()
+# Количество артиклей
 
-for i in range(len(l)):
-    l[i] = int(l[i])
 
-min_value = min(l)
-max_value = max(l)
+text = input().lower().split()
+count = 0
+for i in text:
+    if i in ['a', 'an', 'the']:
+        count += 1
+print(count)
 
-min_index = l.index(min_value)
-max_index = l.index(max_value)
 
-l[max_index],l[min_index] = min_value,max_value
 
-print(*l)
+
+
+
