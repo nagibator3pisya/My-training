@@ -1,13 +1,13 @@
-# Количество артиклей
+# Взлом Братства Стали
 
+text = input()
 
-text = input().lower().split()
-count = 0
-for i in text:
-    if i in ['a', 'an', 'the']:
-        count += 1
-print(count)
+for i in range(int(text[1:])):
+    string = input()
+    if '#' in string:
+        string = string[:string.find('#')]
 
+    print(string.rstrip())
 
 
 
