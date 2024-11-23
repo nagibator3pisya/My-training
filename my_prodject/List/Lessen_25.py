@@ -1,15 +1,13 @@
-# Взлом Братства Стали
-
-text = input()
-
-for i in range(int(text[1:])):
-    string = input()
-    if '#' in string:
-        string = string[:string.find('#')]
-
-    print(string.rstrip())
+# метод sort
+# не создает новый список а изменяет
 
 
+my_list = ["a", "banana", "ki", "orang"]
 
+my_list.sort(key=len)
+print(my_list)
 
-
+"""
+• Используйте sort(), если вам нужно отсортировать список на месте и вам не нужен новый отсортированный список. 
+Это более эффективно, если вам не нужна копия исходного списка
+"""
