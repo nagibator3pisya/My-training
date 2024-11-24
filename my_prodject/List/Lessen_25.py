@@ -1,6 +1,15 @@
-# метод sorted
-# создает новый отсортированный список
-new_list = [1, 5, 1.5, 8, 9, 66, 5]
-ss = sorted(new_list,reverse=True)
-# print(ss)
-print(new_list)
+
+
+numbers_string = input().split()
+
+for i in range(len(numbers_string)):
+    numbers_string[i] = int(numbers_string[i])
+
+
+b = numbers_string.copy()
+
+numbers_string.sort()
+b.sort(reverse=True)
+
+print(*numbers_string)
+print(*b)
