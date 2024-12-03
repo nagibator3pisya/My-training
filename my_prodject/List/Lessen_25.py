@@ -1,10 +1,11 @@
-''''
-Дополните приведенный код списочным выражением, 
-чтобы получить новый список, содержащий только слова длиной не менее пяти символов (включительно).
+'''''
+На вход программе подается натуральное число 
+n. Напишите программу, использующую списочное выражение, 
+которая создает список, содержащий квадраты чисел от 1 до
+n (включительно), а затем выводит его элементы построчно, то есть каждый на отдельной строке.
 '''''
 
-keywords = ['ll','False', 'True', 'None', 'and', 'with', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'try', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'while', 'yield']
+nubm = int(input())
 
-lengths = [i for i in keywords if len(i) <= 5]
-
-print(lengths)
+generator = [i**2 for i in range(1,nubm+1)]
+print(*generator, sep='\n')
