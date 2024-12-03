@@ -1,33 +1,16 @@
+""""
+Дополните приведенный код, используя списочное выражение так, чтобы 
+получить новый список, содержащий строки исходного списка, 
+где у каждой строки удалён первый символ.
+"""""
 
-''''
-Вложенные генераторы списков
-'''''
+keywords = ['False', 'True', 'None', 'and', 'with',
+            'as', 'assert', 'break', 'class', 'continue',
+            'def', 'del', 'elif', 'else', 'except',
+            'finally', 'try', 'for', 'from', 'global', 'if',
+            'import', 'in', 'is', 'lambda', 'nonlocal', 'not',
+            'or', 'pass', 'raise', 'return', 'while', 'yield']
 
-'''
-[[генератор списка] for переменная in итерируемый объект ]]
-'''
-# M,N = 3,4
-#
-# generator = [[a for a in range(M)] for b in range(N)]
-# print(generator)
+new_keywords = [x[1::] for x in keywords]
 
-
-'''
-Работа с двумерным списком
-[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
-возвести каждый элемент в квадрат
-'''
-# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
-#
-# generators = [[x ** 2 for x in row] for row in matrix]
-# print(generators) # [[1, 4, 9], [16, 25, 36], [49, 64, 81], [100, 121, 144]]
-'''
-перевести из двумерного в одномерный спискок
-'''
-matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
-
-generator = [x ** 2
-             for row in matrix
-             for x in row]
-
-print(generator)
+print(new_keywords)
