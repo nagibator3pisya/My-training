@@ -1,8 +1,22 @@
-'''''
-Дополните приведенный код, используя срезы, так, чтобы он вывел первые 
-6 элементов кортежа primes.
-Примечание. Результатом вывода должна быть строка (2, 3, 5, 7, 11, 13).
+''''
+Дополните приведенный код, используя срезы, 
+так, чтобы он вывел элементы кортежа countries кроме первых двух.
+
+Примечание. Результатом вывода должна быть строка 
+('Slovakia', 'Canada', 'Slovenia', 'Italy', 'Spain', 'Ukraine', 'Chile', 'Cameroon').
+
+2.Дополните приведенный код, используя срезы, 
+так, чтобы он вывел все элементы кортежа countries, кроме последних трех.
+
+3.Дополните приведенный код, используя срезы, так, чтобы он вывел все 
+элементы кортежа countries, кроме двух последних и трех первых.
 '''''
 
-primes = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71)
-print(primes[:6])
+countries = ('Russia', 'Argentina', 'Slovakia', 'Canada', 'Slovenia', 'Italy',
+             'Spain', 'Ukraine', 'Chile', 'Cameroon')
+# print(countries[2::])  ('Slovakia', 'Canada', 'Slovenia', 'Italy', 'Spain', 'Ukraine', 'Chile', 'Cameroon')
+
+# print(countries[:-3:]) # ('Russia', 'Argentina', 'Slovakia', 'Canada', 'Slovenia', 'Italy', 'Spain', 'Ukraine')
+
+print(l)
+
