@@ -2,6 +2,10 @@
 '''
 Создание множества
 '''
+from pprint import pprint
+
+from SET.marvel import simple_set
+
 '''
 Создание пустого сета
 '''
@@ -145,7 +149,7 @@ set в разные типы
 удаление
 '''
 
-set1 = {1, 2, 3, 4, 'a', 'p'}
+# set1 = {1, 2, 3, 4, 'a', 'p'}
 
 # set1.remove(1)
 # print(set1)
@@ -167,6 +171,62 @@ set1 = {1, 2, 3, 4, 'a', 'p'}
 #         flag = True
 
 
+# математические множества
+
+# Методы множеств (математические)
+# union - объединяет множества (оператор | )
+# intersection - возвращает пересечение множеств (оператор &)
+# difference - возвращает разность множеств (оператор -)
+# symmetric_difference - возвращает симметричную разность множеств (оператор ^)
+# film_olga = {
+#     'Железный человек',
+#     'Невероятный Халк',
+#     'Железный человек 2'}
 #
+# film_alex =  {
+#     'Тор',
+#     'Первый мститель',
+#     'Мстители',
+#     'Железный человек 3',
+#     'Тор 2: Царство тьмы',
+#     'Железный человек 2'
+#     }
+
+# unions = simple_set.union(simple_set2)
+# unions2 = simple_set|simple_set2 # 2 вариант объединения
+# print(unions2)
+
+# Какие фильмы смотрели оба?
+# print(film_alex.intersection(film_olga))
+
+# print(film_olga.difference(film_alex))
+
+# print(film_olga.symmetric_difference(film_alex))
 
 
+
+# while True:
+#     user = input()
+#     if user  == 'стоп':
+#         break
+#     usser_film = set(user.split(',')) # приобразум в ser , разделяя запятым
+#     out = usser_film.intersection(simple_set)
+#     if out:
+#         print(''.join(out)) # приобразуем в строку
+#     else:
+#         print('Такого нет')
+
+
+# со списком
+
+# while True:
+#     user = input()
+#     if user  == 'стоп':
+#         break
+#     usser_film = user.split(',')
+#     bd_list = list(simple_set)
+#     a = [i for i in usser_film if i in bd_list]
+#     if a:
+#         print(a)
+#     else:
+#         print('такого нет')
