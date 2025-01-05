@@ -1,88 +1,52 @@
-"""""
-Искоючение
-"""""
-from pickle import PickleError
-
-# num_input = input('Число: ')
-# num_list = num_input.split(',')
-#
+# data_lst = ['1', '2', '3', '4d', 5]
 # new_list = []
-#
-# for i in num_list:
+# for i in data_lst:
 #     try:
-#         i = int(num_input)
+#         if int(i):
+#             new_list.append(i)
 #     except ValueError:
-#         print(f"Не число: {i}")
-#         continue
-#     finally:
-#         new_list.append(i)
+#         print(f'Это не число: {str(i)}')
+#
 #
 # print(new_list)
 
-'''
-Делим 2 числа друг на друга
-'''
-# a = input()
-# b = input()
+# номер телефона
+
+nums= [
+'+77053183958',
+'+77773183958',
+'7773183958',
+'+(777)73183958',
+'+7(777)-731-83-58',
+'+7(777) 731 83 58']
+
+# phone = ', '.join(nums)
+# clear = phone.replace('(','').replace(')','').replace('-','').replace(' ','')
+# # print(clear)
+
+# print(nums[1])
+# for phones in nums:
+#     clear_phones = phones.replace('(','').replace(')','').replace('-','').replace(' ','')
+#     try:
+#         if not clear_phones.startswith('+7') or clear_phones.startswith('8'):
+#             raise ValueError("не +7 и не 8")
+#         if len(clear_phones) == 11:
+#             raise ValueError("Не прошла проверку длинна")
+#         if not clear_phones[1:].isdigit():
+#             raise ValueError("не цифры")
+#     except ValueError as e:
+#         print(f'{e} {phones}')
 #
-# try:
-#     int_a = int(a)
-#     int_b = int(b)
-#     print(int_a / int_b)
-# except ValueError: # Возникает если это не число
-#     print('Это не число')
-# except ZeroDivisionError as err: # Деление на 0 запрещено
-#     print(f'Делить на ноль нельзя: {err}')
-# else: # выполняется если ошибок нет
-#     print('Ошибок нет')
-# finally: # блок всегда выполняется
-#     print('Блок выполняется всегда')
+#
+# else:
+#     print('ok')
 
-'''
-Несколько исключений
-'''
-# flag = False
-# while not flag:
-#     try:
-#         inputs = int(input())
-#         result = 10 / inputs
-#         my_list = [0, 1, 2, 3]
-#         print(10 / my_list[inputs])
-#     except ValueError:
-#         print('Не число')
-#     except ZeroDivisionError:
-#         print('Делить на ноль нельзя')
-#     except IndexError:
-#         print('Индекс выходит за приделы списка')
-#     else:
-#         flag = True
-'''
-Обьеденяем ошибки ещё часть 2
-'''
-# flag = False
-# while not flag:
-#     try:
-#         inputs = int(input())
-#         result = 10 / inputs
-#         my_list = [0, 1, 2, 3]
-#         print(10 / my_list[inputs])
-#     except(ValueError,ZeroDivisionError,IndexError) as e:
-#         print(f'Произошла ошибка {e}')
-#     else:
-#         flag = True
 
-'''
-Обработка всех типов исключений
-'''
 
-flag = False
-while not flag:
-    try:
-        inputs = int(input())
-        result = 10 / inputs
-        my_list = [0, 1, 2, 3]
-        print(10 / my_list[inputs])
-    except Exception as e:
-        print(f'Произошла ошибка {e}')
-    else:
-        flag = True.
+
+
+
+
+
+
+
