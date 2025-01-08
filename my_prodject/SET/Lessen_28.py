@@ -2,9 +2,6 @@
 '''
 Создание множества
 '''
-from pprint import pprint
-
-from SET.marvel import simple_set
 
 '''
 Создание пустого сета
