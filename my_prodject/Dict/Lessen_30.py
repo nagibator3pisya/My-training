@@ -223,55 +223,76 @@ dict_sample = {
 
 # Обработка других типов в словаре
 
-films_2 = {
-    'Мстители: Династия Канга': {
-        'Дата выхода': 2026,
-        'Режиссёр': 'Дестин Дэниел Креттон',
-        'Актёры': ['Бри Ларсон', 'Том Хиддлстон', 'Сэмюэл Л. Джексон', 'Бенедикт Вонг', 'Тильда Суинтон'],
-        'Производство': {
-            'Студия': 'Marvel Studios',
-            'Бюджет': '200 миллионов долларов'
-        },
-        'Жанры': ('фантастика', 'боевик', 'приключения')
-    },
-    'Мстители': {
-        'Дата выхода': 2012,
-        'Режиссёр': 'Джосс Уидон',
-        'Актёры': ['Роберт Дауни мл.', 'Крис Эванс', 'Крис Хемсворт', 'Скарлетт Йоханссон', 'Джереми Реннер'],
-        'Производство': {
-            'Студия': 'Marvel Studios',
-            'Бюджет': '220 миллионов долларов'
-        },
-        'Жанры': ('фантастика', 'боевик', 'приключения')
-    }
-}
-
-for k,v in films_2.items():
-    print(f'Фильм: {k}')
-
-
-    for deteil_k,deteil_v in v.items():
-        if isinstance(deteil_v, list):
-            print(f"{deteil_k}:")
-            for item in deteil_v:
-                print(f'\t-{item}')
-
-        elif isinstance(deteil_v, dict):
-            print(f"{deteil_k}:")
-            for item in deteil_v:
-                print(f'\t{item}')
-
-        elif isinstance(deteil_v, tuple):
-            print(f"{deteil_k}:")
-            for item in deteil_v:
-                print(f'\t{item}')
-        else:
-
-            print(f'{deteil_k}: {deteil_v}')
-    print()
+# films_2 = {
+#     'Мстители: Династия Канга': {
+#         'Дата выхода': 2026,
+#         'Режиссёр': 'Дестин Дэниел Креттон',
+#         'Актёры': ['Бри Ларсон', 'Том Хиддлстон', 'Сэмюэл Л. Джексон', 'Бенедикт Вонг', 'Тильда Суинтон'],
+#         'Производство': {
+#             'Студия': 'Marvel Studios',
+#             'Бюджет': '200 миллионов долларов'
+#         },
+#         'Жанры': ('фантастика', 'боевик', 'приключения')
+#     },
+#     'Мстители': {
+#         'Дата выхода': 2012,
+#         'Режиссёр': 'Джосс Уидон',
+#         'Актёры': ['Роберт Дауни мл.', 'Крис Эванс', 'Крис Хемсворт', 'Скарлетт Йоханссон', 'Джереми Реннер'],
+#         'Производство': {
+#             'Студия': 'Marvel Studios',
+#             'Бюджет': '220 миллионов долларов'
+#         },
+#         'Жанры': ('фантастика', 'боевик', 'приключения')
+#     }
+# }
+#
+# for k,v in films_2.items():
+#     print(f'Фильм: {k}')
+#
+#
+#     for deteil_k,deteil_v in v.items():
+#         if isinstance(deteil_v, list):
+#             print(f"{deteil_k}:")
+#             for item in deteil_v:
+#                 print(f'\t-{item}')
+#
+#         elif isinstance(deteil_v, dict):
+#             print(f"{deteil_k}:")
+#             for item in deteil_v:
+#                 print(f'\t{item}')
+#
+#         elif isinstance(deteil_v, tuple):
+#             print(f"{deteil_k}:")
+#             for item in deteil_v:
+#                 print(f'\t{item}')
+#         else:
+#
+#             print(f'{deteil_k}: {deteil_v}')
+#     print()
 
 
 '''
 тема
 Генератор словарей
 '''
+
+# source_dict = {'a': 1, 'b': 2, 'c': 3}
+# new_dict = {key: value + 1 for key,value in source_dict.items()}
+# print(new_dict)
+
+# взаимодействие с элементами
+
+source_dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f':6}
+# new_dict = {key: value + 1 for key,value in source_dict.items()}
+# print(new_dict)
+# условие в генераторах
+
+# new_dict = {k:j for k,j in source_dict.items() if j > 1}
+# 2 условия
+# new_dict = {k:j for k,j in source_dict.items() if j > 1 if 2% j != 0}
+# print(new_dict)
+
+# условия if-else
+new = {k:('even' if v%2==0 else 'odd') for (k,v) in source_dict.items()}
+print(new)
+
